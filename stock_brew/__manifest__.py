@@ -10,6 +10,7 @@
         'security/stock_beverage_security.xml',
         'views/beverage_views.xml',
         'views/brewing_menus.xml',
+        'views/product_views.xml',
         'views/drink_list_template.xml',
     ],
 }

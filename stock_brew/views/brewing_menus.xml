@@ -8,7 +8,7 @@
     <act_window id="brew_action_beverage"
         name="Beverages"
         res_model="stock.beverage"
-        view_mode="tree,form"
+        view_mode="tree,form,kanban"
     />
     <menuitem id="menu_brew_beverage"
         name="Beverages"
