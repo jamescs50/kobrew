@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="drink_list_template" name="Drinks">
+        <div id="wrap" class="container">
+            <h1>Drinks</h1>
+            <t t-foreach="drinks" t-as="drink">
+                <div class="row">
+                    <span t-field="drink.name"/>
+                </div>
+            </t>
+        </div>
+    </template>
+</odoo>
