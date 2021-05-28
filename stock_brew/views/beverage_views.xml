@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="stock_beverage_tree_view" model="ir.ui.view">
+            <field name="name">Beverage List</field>
+            <field name="model">stock.beverage</field>
+            <field name="arch" type="xml">
+                <tree string="Beverages">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="stock_beverage_form_view" model="ir.ui.view">
+            <field name="name">Beverage Form</field>
+            <field name="model">stock.beverage</field>
+            <field name="arch" type="xml">
+                <form string="Beverage">
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+                        <field name="id" invisible="True"/>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label class="oe_edit_only" for="name" string="Beverage"/>
+                            <h1><field name="name" placeholder="Beverage"/></h1>
+                        </div>
+                        <notebook>
+                            <page string="Tasting Notes">
+                                <field name="taste_note"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_brew_config"
+              name="Brewing"
+              parent="stock.menu_stock_config_settings"
+              sequence="50"/>
+
+    <act_window id="brew_action_beverage"
+        name="Beverages"
+        res_model="stock.beverage"
+        view_mode="tree,form"
+    />
+    <menuitem id="menu_brew_beverage"
+        name="Beverages"
+        action="brew_action_beverage"
+        parent = "menu_brew_config"
+    />
+</odoo>

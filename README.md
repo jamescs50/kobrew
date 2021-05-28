@@ -1,2 +1,2 @@
 # kobrew
-Odoo ad-on for small brewers
+Odoo add-on for small brewers
