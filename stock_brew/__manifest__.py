@@ -12,5 +12,6 @@
         'views/brewing_menus.xml',
         'views/product_views.xml',
         'views/drink_list_template.xml',
+        'reports/stock_beverage_list_report.xml',
     ],
 }
